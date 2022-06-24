@@ -1,0 +1,72 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.13",
+        "@vue/cli-plugin-router": "^4.5.13",
+        "@vue/cli-plugin-vuex": "^4.5.13",
+        "@vue/cli-service": "^4.5.13",
+        "cross-env": "^5.1",
+        "eslint-config-prettier": "^8.3.0",
+        "fibers": "^5.0.0",
+        "resolve-url-loader": "^5.0.0",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "dependencies": {
+        "axios": "^0.21",
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.17.3",
+        "js-cookie": "^3.0.1",
+        "laravel-mix": "^6.0.6",
+        "sass": "^1.40.1",
+        "sass-loader": "^11.0.1",
+        "vue": "^2.6.14",
+        "vue-loader": "^15.9.8",
+        "vue-meta": "^2.4.0",
+        "vue-router": "^3.5.2",
+        "vue-sweetalert2": "^4.3.1",
+        "vuelidate": "^0.7.6",
+        "vuex": "^3.6.2",
+        "vuex-router-sync": "^5.0.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        ">= 1%",
+        "last 1 major version",
+        "not dead",
+        "Chrome >= 45",
+        "Firefox >= 38",
+        "Edge >= 12",
+        "iOS >= 9",
+        "Safari >= 9",
+        "Android >= 4.4",
+        "Opera >= 30"
+    ]
+}

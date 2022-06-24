@@ -1,0 +1,33 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  .main {
+    height: 100%;
+    .layout {
+      height: 100%;
+      #main-container {
+        height: calc(100% - 107.3px);
+        overflow: hidden scroll;
+        scrollbar-width: thin;
+        max-height: 100%;
+
+
+      }
+    
+      .footer {
+        height: 50px;
+        background: black;
+      }
+    }
+
+    .login-container {
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

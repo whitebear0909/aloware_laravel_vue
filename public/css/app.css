@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+body .main {
+  height: 100%;
+}
+body .main .layout {
+  height: 100%;
+}
+body .main .layout #main-container {
+  height: calc(100% - 107.3px);
+  overflow: hidden scroll;
+  scrollbar-width: thin;
+  max-height: 100%;
+}
+body .main .layout .footer {
+  height: 50px;
+  background: black;
+}
+body .main .login-container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
