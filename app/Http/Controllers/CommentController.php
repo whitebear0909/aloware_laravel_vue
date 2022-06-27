@@ -12,7 +12,7 @@ class CommentController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return [Comment] $comments
      */
     public function index()
     {
@@ -52,6 +52,16 @@ class CommentController extends Controller
         return response($comments , Res::HTTP_OK); 
     }
 
+    /**
+     * create comment.
+     * @param Request $request
+     * [
+     *  author => string,
+     *  message => string,
+     *  parent_comment_id => integer
+     * ]
+     * @return Comment $comment
+     */
     public function postComment(Request $request)
     {
         $params = $request->validate([
@@ -59,12 +69,12 @@ class CommentController extends Controller
             'message' => 'required',
         ]);
 
-        $comments = Comment::create([
+        $comment = Comment::create([
                         'message' => $request->get('message'),
                         'author' => $request->get('author'),
                         'parent_comment_id' => $request->get('parent_comment_id')
                     ]);
 
-        return response($comments , Res::HTTP_OK); 
+        return response($comment , Res::HTTP_OK); 
     }
 }
