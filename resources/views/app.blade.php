@@ -7,6 +7,7 @@
 
   <title>Aloware</title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 
