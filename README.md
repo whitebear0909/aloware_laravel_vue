@@ -51,3 +51,8 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 - resources/components -> define reusable components.
 - resources/routes.js -> define vue routes
 - resources/sass -> define sass
+
+## - Unit Test
+  ```
+  ./vendor/bin/phpunit
+  ```
